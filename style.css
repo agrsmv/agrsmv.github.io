@@ -79,6 +79,9 @@ a:hover {
 #project-image {
   flex: 0 0 auto;
   max-height: 400px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 #fake-left-padding {
