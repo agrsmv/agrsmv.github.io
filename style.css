@@ -6,7 +6,7 @@ html {
 }
 
 :root {
-  --padding: 30px;
+  --padding-left: 30px;
   --horizontal-gap: 20px;
 }
 
@@ -36,7 +36,7 @@ a:hover {
   display: flex;
   align-items: baseline;
   gap: var(--horizontal-gap);
-  padding: var(--padding);
+  padding: var(--padding-left);
   padding-top: 23px;
   padding-bottom: 0px;
 }
@@ -76,6 +76,7 @@ a:hover {
   -webkit-overflow-scrolling: touch;
   overflow-y: clip;
   align-items: flex-start;
+  padding-left: var(--padding-left);
 }
 
 .project-images::-webkit-scrollbar {
@@ -90,11 +91,6 @@ a:hover {
   user-select: none;
 }
 
-#fake-left-padding {
-  flex: 0 0 auto;
-  width: 10px;
-}
-
 #image-standart-height {
   max-height: 400px;
 }
@@ -103,8 +99,16 @@ a:hover {
   display: flex;
   gap: var(--horizontal-gap);
   align-items: baseline;
-  padding-left: var(--padding);
-  padding-right: var(--padding);
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-left);
 }
 
-
+@media screen and (max-width: 425px) {
+  :root {
+    --padding-left: 10px;
+    --horizontal-gap: 10px;
+  }
+  .bio {
+    padding-top: 10px;
+  }
+}
