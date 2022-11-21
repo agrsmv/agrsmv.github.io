@@ -1,18 +1,13 @@
-html {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1rem;
-  padding: 0px;
-}
-
 :root {
   --padding-left: 30px;
   --horizontal-gap: 20px;
 }
 
-p {
-  margin-block-start: 0em;
-  margin-block-end: 0em;
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1rem;
+  padding: 0px;
 }
 
 body {
@@ -24,6 +19,12 @@ body {
   gap: var(--horizontal-gap);
 }
 
+
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -31,6 +32,8 @@ a {
 a:hover {
   text-decoration: line-through;
 }
+
+
 
 .bio {
   display: flex;
@@ -46,16 +49,15 @@ a:hover {
   flex-shrink: 4;
   flex-basis: 0;
 }
-
 .viewswitch {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;
 }
-
 #info {
   cursor: pointer;
 }
+
 
 .project {
   display: flex;
@@ -78,11 +80,9 @@ a:hover {
   align-items: flex-start;
   padding-left: var(--padding-left);
 }
-
 .project-images::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
-
 #project-image {
   flex: 0 0 auto;
   max-height: 400px;
@@ -90,11 +90,9 @@ a:hover {
   -webkit-user-select: none;
   user-select: none;
 }
-
 #image-standart-height {
   max-height: 400px;
 }
-
 .project-text {
   display: flex;
   gap: var(--horizontal-gap);
@@ -103,6 +101,9 @@ a:hover {
   padding-right: var(--padding-left);
 }
 
+
+
+
 @media screen and (max-width: 425px) {
   :root {
     --padding-left: 10px;
@@ -110,5 +111,11 @@ a:hover {
   }
   .bio {
     padding-top: 10px;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  a:hover {
+    text-decoration: none;
   }
 }
