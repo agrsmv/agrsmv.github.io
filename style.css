@@ -2,6 +2,7 @@
 :root {
   --padding-left: 30px;
   --horizontal-gap: 20px;
+  --flex-basis: 10px;
 }
 
 html {
@@ -55,12 +56,12 @@ a:hover {
 .me {
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: 70px;
+  flex-basis: var(--flex-basis);
 }
 .viewswitch {
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: 70px;
+  flex-basis: var(--flex-basis);
 }
 #info {
   cursor: pointer;
@@ -114,7 +115,7 @@ a:hover {
   justify-content: space-between;
 }
 .project-text-element {
-  flex-basis: 70px;
+  flex-basis: var(--flex-basis);
   flex-grow: 1;
   flex-shrink: 0;
 }
