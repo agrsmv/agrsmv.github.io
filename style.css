@@ -2,7 +2,7 @@
 :root {
   --padding-left: 30px;
   --horizontal-gap: 20px;
-  --flex-basis: 10px;
+  --flex-basis: 150x;
 }
 
 html {
@@ -43,29 +43,53 @@ a:hover {
 /* BIO */
 .bio {
   width: calc(100% - 2 * var(--padding-left));
+  padding-bottom: 0px;
+  padding-top: 23px;
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-left);
+
   display: flex;
   align-items: baseline;
-  padding: var(--padding-left);
-  padding-top: 23px;
-  padding-bottom: 0px;
-  align-items: baseline;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  gap: var(--horizontal-gap);
+  justify-content: flex-start;
+
 }
 
-.me {
+.col-name {
+  flex-basis: 1px;
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: var(--flex-basis);
 }
-.viewswitch {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: var(--flex-basis);
-}
-#info {
+#website-title {
   cursor: pointer;
 }
+.col-viewswitch {
+  flex-basis: 1px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.col-empty-2 {
+  flex-basis: 1px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.col-empty-3 {
+  flex-basis: 1px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.col-empty-4 {
+  flex-basis: 1px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.col-empty-5 {
+  flex-basis: 1px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
 
 /* PROJECTS */
 .project {
@@ -104,7 +128,7 @@ a:hover {
 }
 
 /* PROJECT TEXT */
-.project-text {
+.project-info {
   width: calc(100% - 2 * var(--padding-left));
   padding-right: var(--padding-left);
   padding-left: var(--padding-left);
@@ -112,13 +136,22 @@ a:hover {
   display: flex;
   align-items: baseline;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: var(--horizontal-gap);
 }
-.project-text-element {
-  flex-basis: var(--flex-basis);
+
+.col-project-title {
+  flex-basis: 1px;
   flex-grow: 1;
   flex-shrink: 0;
 }
+
+.col-project-year {
+  flex-basis: 1px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
 
 /* RESPONSIVE */
 @media screen and (max-width: 425px) {
@@ -128,6 +161,12 @@ a:hover {
   }
   .bio {
     padding-top: 10px;
+  }
+  .col-empty-2 {
+    display: none;
+  }
+  .col-empty-3 {
+    display: none;
   }
 }
 

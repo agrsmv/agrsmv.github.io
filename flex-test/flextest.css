@@ -1,0 +1,88 @@
+/* BASE */
+:root {
+  --padding-left: 30px;
+  --horizontal-gap: 20px;
+  --flex-basis: 150x;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1rem;
+  padding: 0px;
+  overflow-x: hidden;
+  white-space: nowrap
+
+}
+
+body {
+  background: black;
+  color: white;
+  margin: 0;
+  flex-direction: column;
+  gap: var(--horizontal-gap);
+  overflow-x: hidden;
+}
+
+/* TEXT */
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: line-through;
+}
+
+/* PROJECT TEXT */
+.project-info {
+  width: 100%;
+
+  display: flex;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.first-col {
+  flex-basis: 1px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.last-col {
+  flex-basis: 1px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.mid-cols {
+  flex-basis: 1px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 770px) {
+  :root {
+    --padding-left: 10px;
+    --horizontal-gap: 10px;
+  }
+  .bio {
+    padding-top: 10px;
+  }
+  .mid-cols {
+    display: none;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  a:hover {
+    text-decoration: none;
+  }
+}
