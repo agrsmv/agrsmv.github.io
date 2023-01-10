@@ -28,6 +28,9 @@ html {
   text-decoration-thickness: 9px;
   padding: 0px;
   overflow-x: hidden;
+
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
 
@@ -39,6 +42,7 @@ body {
   flex-direction: column;
   gap: var(--vertical-gap);
   overflow-x: hidden;
+
 }
 
 /* TEXT */
