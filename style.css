@@ -34,7 +34,7 @@ html {
   line-height: 27px;
   letter-spacing: -1px;
   text-transform: lowercase;
-  text-decoration-thickness: 9px;
+  /* text-decoration-thickness: 9px; */
   padding: 0px;
   overflow-x: hidden;
 
