@@ -204,11 +204,6 @@ a:hover {
   .col-empty-3 {
     display: none;
   }
-  html {
-    font-size: 40px;
-    line-height: 38px;
-  }
-  
 }
 
 @media (hover: none) and (pointer: coarse) {
