@@ -11,6 +11,7 @@
   --size-page-padding: 20;
 }
 
+/* fonts */
 @font-face {
   font-family: HelveticaNowText;
   src: url(fonts/HelveticaNowText-Regular.woff2);
