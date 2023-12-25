@@ -1,19 +1,16 @@
 /* BASE */
 :root {
-  --padding-left: 30px;
-  --horizontal-gap: 27px;
-  --vertical-gap: 0px;
+  /* colors */
+  --color-background: #000000;
+  --color-text: #FFFFFF;
+  --color-button: #3D3D3D;
 
-  --image-standart: 500px;
-  --image-large: 700px;
+  /* sizes */
+  --size-1line: 28.75;
+  --size-2lines: 57.5;
+  --size-page-padding: 20;
 }
 
-@font-face {
-  font-family: HelveticaNowDisplay;
-  src: url(fonts/HelveticaNowDisplay-Blk.woff2);
-  font-weight: 900;
-  font-style: normal;
-}
 @font-face {
   font-family: HelveticaNowText;
   src: url(fonts/HelveticaNowText-Regular.woff2);
