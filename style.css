@@ -38,7 +38,7 @@
 
 html {
   background: var(--color-background, #000);
-  padding: 20px;
+  padding: 10px var(--size-page-padding, 20px) var(--size-page-padding, 20px) var(--size-page-padding, 20px);
   font-family: HelveticaNowText, Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 25px;
@@ -245,22 +245,37 @@ header button.clicked {
 }
 
 
-
+/* 1600px */
 @media only screen and (max-width: 1600px) {
   .grid-projects-item {
     width: calc((100vw - 40px - (20px * 3)) / 4);
   }
 }
+
+/* laptop */
 @media only screen and (max-width: 1024px) {
   .grid-projects-item {
     width: calc((100vw - 40px - (20px * 2)) / 3);
   }
 }
+
+/* tablet (подумать что делать с айпадами, они шире) */
 @media only screen and (max-width: 768px) {
   .grid-projects-item {
     width: calc((100vw - 40px - 20px) / 2);
   }
+
+  header {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+  }
+
+  main {
+    padding-top: 0px;
+  }
 }
+/* mobile */
 @media only screen and (max-width: 425px) {
   .grid-projects-item {
     width: calc(100vw - 40px);
